@@ -26,7 +26,7 @@ c = socket.socket()
 c.connect(('localhost', 8000))
 
 while True:
-    mac = input("Enter MAC address to find IP (or type 'exit' to quit): ")
+    mac = input("Enter IP address to find MAC (or type 'exit' to quit): ")
     if mac.lower() == "exit":  
         break
     c.send(mac.encode())
